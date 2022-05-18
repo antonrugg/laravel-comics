@@ -3,6 +3,7 @@ main {
     color: white;
     padding-bottom: 2rem;
     text-align: center;
+    overflow-x: hidden;
 
     .jumbotron {
         background-image: url('/imgs/jumbotron.jpg');

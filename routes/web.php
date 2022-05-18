@@ -14,570 +14,66 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $navlinks = [
-        [
-            "text"=>"characters",
-            "url"=>"/characters"
-        ],
-        [
-            "text"=>"comics",
-            "url"=>"/comics"
-        ],
-        [
-            "text"=>"movies",
-            "url"=>"/movies"
-        ],
-        [
-            "text"=>"tv",
-            "url"=>"/tv"
-        ],
-        [
-            "text"=>"games",
-            "url"=>"/games"
-        ],
-        [
-            "text"=>"collectibles",
-            "url"=>"/collectibles"
-        ],
-        [
-            "text"=>"video",
-            "url"=>"/video"
-        ],
-        [
-            "text"=>"fans",
-            "url"=>"/fans"
-        ],
-        [
-            "text"=>"news",
-            "url"=>"/news"
-        ],
-        [
-            "text"=>"shop",
-            "url"=>"/shop"
-        ],
-
-    ];
-
+    $navlinks = config('navlinks');
     return view('home', [ "navlinks"=> $navlinks ]);
 
 });
 
 Route::get('/characters', function () {
-     $navlinks = [
-        [
-            "text"=>"characters",
-            "url"=>"/characters"
-        ],
-        [
-            "text"=>"comics",
-            "url"=>"/comics"
-        ],
-        [
-            "text"=>"movies",
-            "url"=>"/movies"
-        ],
-        [
-            "text"=>"tv",
-            "url"=>"/tv"
-        ],
-        [
-            "text"=>"games",
-            "url"=>"/games"
-        ],
-        [
-            "text"=>"collectibles",
-            "url"=>"/collectibles"
-        ],
-        [
-            "text"=>"video",
-            "url"=>"/video"
-        ],
-        [
-            "text"=>"fans",
-            "url"=>"/fans"
-        ],
-        [
-            "text"=>"news",
-            "url"=>"/news"
-        ],
-        [
-            "text"=>"shop",
-            "url"=>"/shop"
-        ],
-
-    ];
+    $navlinks = config('navlinks');
     return view('characters', [ "navlinks"=> $navlinks ]);
 });
 
 Route::get('/comics', function () {
-     $navlinks = [
-        [
-            "text"=>"characters",
-            "url"=>"/characters"
-        ],
-        [
-            "text"=>"comics",
-            "url"=>"/comics"
-        ],
-        [
-            "text"=>"movies",
-            "url"=>"/movies"
-        ],
-        [
-            "text"=>"tv",
-            "url"=>"/tv"
-        ],
-        [
-            "text"=>"games",
-            "url"=>"/games"
-        ],
-        [
-            "text"=>"collectibles",
-            "url"=>"/collectibles"
-        ],
-        [
-            "text"=>"video",
-            "url"=>"/video"
-        ],
-        [
-            "text"=>"fans",
-            "url"=>"/fans"
-        ],
-        [
-            "text"=>"news",
-            "url"=>"/news"
-        ],
-        [
-            "text"=>"shop",
-            "url"=>"/shop"
-        ],
-
-    ];
+    
     $comics = config('comics');
+    $navlinks = config('navlinks');
 
     return view('comics', [ "navlinks"=> $navlinks, "comics"=>$comics ]);
 });
 
 Route::get('/comics/data', function () {
-     $navlinks = [
-        [
-            "text"=>"characters",
-            "url"=>"/characters"
-        ],
-        [
-            "text"=>"comics",
-            "url"=>"/comics"
-        ],
-        [
-            "text"=>"movies",
-            "url"=>"/movies"
-        ],
-        [
-            "text"=>"tv",
-            "url"=>"/tv"
-        ],
-        [
-            "text"=>"games",
-            "url"=>"/games"
-        ],
-        [
-            "text"=>"collectibles",
-            "url"=>"/collectibles"
-        ],
-        [
-            "text"=>"video",
-            "url"=>"/video"
-        ],
-        [
-            "text"=>"fans",
-            "url"=>"/fans"
-        ],
-        [
-            "text"=>"news",
-            "url"=>"/news"
-        ],
-        [
-            "text"=>"shop",
-            "url"=>"/shop"
-        ],
-
-    ];
+    $navlinks = config('navlinks'); 
     return view('data', [ "navlinks"=> $navlinks ]);
 });
 
 Route::get('/movies', function () {
-     $navlinks = [
-        [
-            "text"=>"characters",
-            "url"=>"/characters"
-        ],
-        [
-            "text"=>"comics",
-            "url"=>"/comics"
-        ],
-        [
-            "text"=>"movies",
-            "url"=>"/movies"
-        ],
-        [
-            "text"=>"tv",
-            "url"=>"/tv"
-        ],
-        [
-            "text"=>"games",
-            "url"=>"/games"
-        ],
-        [
-            "text"=>"collectibles",
-            "url"=>"/collectibles"
-        ],
-        [
-            "text"=>"video",
-            "url"=>"/video"
-        ],
-        [
-            "text"=>"fans",
-            "url"=>"/fans"
-        ],
-        [
-            "text"=>"news",
-            "url"=>"/news"
-        ],
-        [
-            "text"=>"shop",
-            "url"=>"/shop"
-        ],
-
-    ];
+    $navlinks = config('navlinks');
     return view('movies', [ "navlinks"=> $navlinks ]);
 });
 
 Route::get('/tv', function () {
-     $navlinks = [
-        [
-            "text"=>"characters",
-            "url"=>"/characters"
-        ],
-        [
-            "text"=>"comics",
-            "url"=>"/comics"
-        ],
-        [
-            "text"=>"movies",
-            "url"=>"/movies"
-        ],
-        [
-            "text"=>"tv",
-            "url"=>"/tv"
-        ],
-        [
-            "text"=>"games",
-            "url"=>"/games"
-        ],
-        [
-            "text"=>"collectibles",
-            "url"=>"/collectibles"
-        ],
-        [
-            "text"=>"video",
-            "url"=>"/video"
-        ],
-        [
-            "text"=>"fans",
-            "url"=>"/fans"
-        ],
-        [
-            "text"=>"news",
-            "url"=>"/news"
-        ],
-        [
-            "text"=>"shop",
-            "url"=>"/shop"
-        ],
-
-    ];
+    $navlinks = config('navlinks');
     return view('tv', [ "navlinks"=> $navlinks ]);
 });
 
 Route::get('/games', function () {
-     $navlinks = [
-        [
-            "text"=>"characters",
-            "url"=>"/characters"
-        ],
-        [
-            "text"=>"comics",
-            "url"=>"/comics"
-        ],
-        [
-            "text"=>"movies",
-            "url"=>"/movies"
-        ],
-        [
-            "text"=>"tv",
-            "url"=>"/tv"
-        ],
-        [
-            "text"=>"games",
-            "url"=>"/games"
-        ],
-        [
-            "text"=>"collectibles",
-            "url"=>"/collectibles"
-        ],
-        [
-            "text"=>"video",
-            "url"=>"/video"
-        ],
-        [
-            "text"=>"fans",
-            "url"=>"/fans"
-        ],
-        [
-            "text"=>"news",
-            "url"=>"/news"
-        ],
-        [
-            "text"=>"shop",
-            "url"=>"/shop"
-        ],
-
-    ];
+    $navlinks = config('navlinks');
     return view('games', [ "navlinks"=> $navlinks ]);
 });
 
 Route::get('/collectibles', function () {
-     $navlinks = [
-        [
-            "text"=>"characters",
-            "url"=>"/characters"
-        ],
-        [
-            "text"=>"comics",
-            "url"=>"/comics"
-        ],
-        [
-            "text"=>"movies",
-            "url"=>"/movies"
-        ],
-        [
-            "text"=>"tv",
-            "url"=>"/tv"
-        ],
-        [
-            "text"=>"games",
-            "url"=>"/games"
-        ],
-        [
-            "text"=>"collectibles",
-            "url"=>"/collectibles"
-        ],
-        [
-            "text"=>"video",
-            "url"=>"/video"
-        ],
-        [
-            "text"=>"fans",
-            "url"=>"/fans"
-        ],
-        [
-            "text"=>"news",
-            "url"=>"/news"
-        ],
-        [
-            "text"=>"shop",
-            "url"=>"/shop"
-        ],
-
-    ];
+    $navlinks = config('navlinks');
     return view('collectibles', [ "navlinks"=> $navlinks ]);
 });
 
 Route::get('/video', function () {
-     $navlinks = [
-        [
-            "text"=>"characters",
-            "url"=>"/characters"
-        ],
-        [
-            "text"=>"comics",
-            "url"=>"/comics"
-        ],
-        [
-            "text"=>"movies",
-            "url"=>"/movies"
-        ],
-        [
-            "text"=>"tv",
-            "url"=>"/tv"
-        ],
-        [
-            "text"=>"games",
-            "url"=>"/games"
-        ],
-        [
-            "text"=>"collectibles",
-            "url"=>"/collectibles"
-        ],
-        [
-            "text"=>"video",
-            "url"=>"/video"
-        ],
-        [
-            "text"=>"fans",
-            "url"=>"/fans"
-        ],
-        [
-            "text"=>"news",
-            "url"=>"/news"
-        ],
-        [
-            "text"=>"shop",
-            "url"=>"/shop"
-        ],
-
-    ];
+    $navlinks = config('navlinks');
     return view('video', [ "navlinks"=> $navlinks ]);
 });
 
 Route::get('/fans', function () {
-     $navlinks = [
-        [
-            "text"=>"characters",
-            "url"=>"/characters"
-        ],
-        [
-            "text"=>"comics",
-            "url"=>"/comics"
-        ],
-        [
-            "text"=>"movies",
-            "url"=>"/movies"
-        ],
-        [
-            "text"=>"tv",
-            "url"=>"/tv"
-        ],
-        [
-            "text"=>"games",
-            "url"=>"/games"
-        ],
-        [
-            "text"=>"collectibles",
-            "url"=>"/collectibles"
-        ],
-        [
-            "text"=>"video",
-            "url"=>"/video"
-        ],
-        [
-            "text"=>"fans",
-            "url"=>"/fans"
-        ],
-        [
-            "text"=>"news",
-            "url"=>"/news"
-        ],
-        [
-            "text"=>"shop",
-            "url"=>"/shop"
-        ],
-
-    ];
+    $navlinks = config('navlinks');
     return view('fans', [ "navlinks"=> $navlinks ]);
 });
 
 Route::get('/news', function () {
-     $navlinks = [
-        [
-            "text"=>"characters",
-            "url"=>"/characters"
-        ],
-        [
-            "text"=>"comics",
-            "url"=>"/comics"
-        ],
-        [
-            "text"=>"movies",
-            "url"=>"/movies"
-        ],
-        [
-            "text"=>"tv",
-            "url"=>"/tv"
-        ],
-        [
-            "text"=>"games",
-            "url"=>"/games"
-        ],
-        [
-            "text"=>"collectibles",
-            "url"=>"/collectibles"
-        ],
-        [
-            "text"=>"video",
-            "url"=>"/video"
-        ],
-        [
-            "text"=>"fans",
-            "url"=>"/fans"
-        ],
-        [
-            "text"=>"news",
-            "url"=>"/news"
-        ],
-        [
-            "text"=>"shop",
-            "url"=>"/shop"
-        ],
-
-    ];
+    $navlinks = config('navlinks');
     return view('news', [ "navlinks"=> $navlinks ]);
 });
 
 Route::get('/shop', function () {
-     $navlinks = [
-        [
-            "text"=>"characters",
-            "url"=>"/characters"
-        ],
-        [
-            "text"=>"comics",
-            "url"=>"/comics"
-        ],
-        [
-            "text"=>"movies",
-            "url"=>"/movies"
-        ],
-        [
-            "text"=>"tv",
-            "url"=>"/tv"
-        ],
-        [
-            "text"=>"games",
-            "url"=>"/games"
-        ],
-        [
-            "text"=>"collectibles",
-            "url"=>"/collectibles"
-        ],
-        [
-            "text"=>"video",
-            "url"=>"/video"
-        ],
-        [
-            "text"=>"fans",
-            "url"=>"/fans"
-        ],
-        [
-            "text"=>"news",
-            "url"=>"/news"
-        ],
-        [
-            "text"=>"shop",
-            "url"=>"/shop"
-        ],
-
-    ];
+    $navlinks = config('navlinks');
     return view('shop', [ "navlinks"=> $navlinks ]);
 });
 
