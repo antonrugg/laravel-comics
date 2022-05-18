@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  background-color: white;
+}
+
+header .container-90w {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0rem;
+}
+
+header ul {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+  -moz-column-gap: 0.7rem;
+       column-gap: 0.7rem;
+}
+
+header ul li {
+  padding: 0rem 0.8rem;
+  font-weight: 800;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+header ul li a {
+  color: gray;
+  text-decoration: none;
+}
+
+header ul li a:hover {
+  color: rgb(12, 124, 236);
+  border-bottom: 5px solid rgb(12, 124, 236);
+  padding-bottom: 3.325rem;
+}
+
+main {
+  background-color: black;
+  color: white;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+main .jumbotron {
+  background-image: url("/imgs/jumbotron.jpg");
+  background-position: center top;
+  height: 53vh;
+  position: relative;
+}
+
+main .jumbotron #jumbo-label {
+  position: absolute;
+  bottom: -15px;
+  left: 125px;
+  padding: 0.3rem 2rem;
+  background-color: rgb(12, 124, 236);
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 900;
+  transform: scaleY(1.5);
+}
+
+main .container-90w {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+  padding-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+main #load-more-btn {
+  background-color: rgb(12, 124, 236);
+  padding: 0.7rem 4rem;
+  color: white;
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+main #load-more-btn:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+article {
+  flex-basis: 16.6666666667%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  row-gap: 2rem;
+}
+
+article img {
+  max-height: 100%;
+  transition: transform 0.3s;
+}
+
+article img:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s;
+}
+
+article a {
+  text-decoration: none;
+  color: white;
+}
+
+article a:hover {
+  text-decoration: underline;
+}
+
+article a p {
+  max-width: 200px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
