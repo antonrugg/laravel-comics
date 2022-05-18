@@ -14,7 +14,42 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $navlinks = [
+        [
+            "text"=>"chararcters"
+        ],
+        [
+            "text"=>"comics"
+        ],
+        [
+            "text"=>"movies"
+        ],
+        [
+            "text"=>"tv"
+        ],
+        [
+            "text"=>"games"
+        ],
+        [
+            "text"=>"collectibles"
+        ],
+        [
+            "text"=>"video"
+        ],
+        [
+            "text"=>"fans"
+        ],
+        [
+            "text"=>"news"
+        ],
+        [
+            "text"=>"shop"
+        ],
+
+    ];
+
+    return view('home', [ "navlinks"=> $navlinks ]);
+
 });
 
 Route::get('/comics', function () {

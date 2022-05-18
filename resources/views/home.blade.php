@@ -8,9 +8,22 @@
 </head>
 <body>
     <header>
-    </header>
+        <div class="container-90w">
+            <img src="../assets/img/dc-logo.png" alt="DC logo">
+            <div id="menu-container">
+                <ul>
+                @foreach ($navlinks as $navlink) 
+                <li>
+                    <a href="{{ url('/comics') }}">{{ $navlink['text'] }}</a>
+                </li>
+                @endforeach  
+                </ul>
+            </div>
+        </div>
+  </header>
     <main>
         <h1>HOME TEST</h1>
+       
     </main>
     <footer>
     </footer>    
