@@ -16,34 +16,44 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $navlinks = [
         [
-            "text"=>"chararcters"
+            "text"=>"chararcters",
+            "url"=>"/chararcters"
         ],
         [
-            "text"=>"comics"
+            "text"=>"comics",
+            "url"=>"/comics"
         ],
         [
-            "text"=>"movies"
+            "text"=>"movies",
+            "url"=>"/movies"
         ],
         [
-            "text"=>"tv"
+            "text"=>"tv",
+            "url"=>"/tv"
         ],
         [
-            "text"=>"games"
+            "text"=>"games",
+            "url"=>"/games"
         ],
         [
-            "text"=>"collectibles"
+            "text"=>"collectibles",
+            "url"=>"/collectibles"
         ],
         [
-            "text"=>"video"
+            "text"=>"video",
+            "url"=>"/video"
         ],
         [
-            "text"=>"fans"
+            "text"=>"fans",
+            "url"=>"/fans"
         ],
         [
-            "text"=>"news"
+            "text"=>"news",
+            "url"=>"/news"
         ],
         [
-            "text"=>"shop"
+            "text"=>"shop",
+            "url"=>"/shop"
         ],
 
     ];

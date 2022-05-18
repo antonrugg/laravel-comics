@@ -14,7 +14,7 @@
                 <ul>
                 @foreach ($navlinks as $navlink) 
                 <li>
-                    <a href="{{ url('/comics') }}">{{ $navlink['text'] }}</a>
+                    <a href="{{ $navlink['url'] }}">{{ $navlink['text'] }}</a>
                 </li>
                 @endforeach  
                 </ul>
