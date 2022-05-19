@@ -33,8 +33,9 @@ Route::get('/comics', function () {
 });
 
 Route::get('/comics/data', function () {
+    $comics = config('comics');
     $navlinks = config('navlinks'); 
-    return view('data', [ "navlinks"=> $navlinks ]);
+    return view('data', [ "navlinks"=> $navlinks, "comics"=>$comics ]);
 });
 
 Route::get('/movies', function () {
