@@ -8,7 +8,7 @@
     <title>Home @yield('title')</title>
 </head>
 <body>
-    @include('partials/header')
+    @include('partials/header', $navlinks)
     @include('partials/main')
     @include('partials/bluesection')
     @include('partials/footer')   

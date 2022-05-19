@@ -2,43 +2,53 @@
     $navlinks = [
         [
             "text"=>"characters",
-            "url"=>"/characters"
+            "url"=>"/characters",
+            "active"=>false
         ],
         [
             "text"=>"comics",
-            "url"=>"/comics"
+            "url"=>"/comics",
+            "active"=>true
         ],
         [
             "text"=>"movies",
-            "url"=>"/movies"
+            "url"=>"/movies",
+            "active"=>false
         ],
         [
             "text"=>"tv",
-            "url"=>"/tv"
+            "url"=>"/tv",
+            "active"=>false
         ],
         [
             "text"=>"games",
-            "url"=>"/games"
+            "url"=>"/games",
+            "active"=>false
         ],
         [
             "text"=>"collectibles",
-            "url"=>"/collectibles"
+            "url"=>"/collectibles",
+            "active"=>false
         ],
         [
             "text"=>"video",
-            "url"=>"/video"
+            "url"=>"/video",
+            "active"=>false
         ],
         [
             "text"=>"fans",
-            "url"=>"/fans"
+            "url"=>"/fans",
+            "active"=>false
         ],
         [
             "text"=>"news",
-            "url"=>"/news"
+            "url"=>"/news",
+            "active"=>false
         ],
         [
             "text"=>"shop",
-            "url"=>"/shop"
+            "url"=>"/shop",
+            "active"=>false
         ],
 
     ];

@@ -5,7 +5,11 @@
                 <ul>
                 @foreach ($navlinks as $navlink) 
                 <li>
+                    @if($navlink['active'])
+                    <a href="{{ $navlink['url'] }}" class="active">{{ $navlink['text'] }}</a>
+                    @else
                     <a href="{{ $navlink['url'] }}">{{ $navlink['text'] }}</a>
+                    @endif
                 </li>
                 @endforeach  
                 </ul>

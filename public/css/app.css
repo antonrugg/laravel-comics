@@ -37,6 +37,12 @@ header ul li {
   text-transform: uppercase;
 }
 
+header ul li a.active {
+  color: rgb(12, 124, 236);
+  border-bottom: 5px solid rgb(12, 124, 236);
+  padding-bottom: 3.325rem;
+}
+
 header ul li a {
   color: gray;
   text-decoration: none;

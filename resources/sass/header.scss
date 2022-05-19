@@ -1,6 +1,8 @@
 header {
     background-color: white;
 
+    
+
     .container-90w {
         display: flex;
         justify-content: space-between;
@@ -23,16 +25,26 @@ header {
             font-size: 14px;
             text-transform: uppercase;
 
+            a.active {
+                    color: rgb(12 124 236);
+                    border-bottom: 5px solid rgb(12 124 236);
+                    padding-bottom: 3.325rem;
+                }
+
 
             a {
                 color: gray;
                 text-decoration: none;
+
+                
 
                 &:hover {
                     color: rgb(12 124 236);
                     border-bottom: 5px solid rgb(12 124 236);
                     padding-bottom: 3.325rem;
                 }
+
+               
             }
 
 
