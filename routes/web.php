@@ -32,10 +32,10 @@ Route::get('/comics', function () {
     return view('comics', [ "navlinks"=> $navlinks, "comics"=>$comics ]);
 });
 
-Route::get('/comics/data', function () {
+Route::get('/comics/data/{id}', function ($id) {
     $comics = config('comics');
     $navlinks = config('navlinks'); 
-    return view('data', [ "navlinks"=> $navlinks, "comics"=>$comics ]);
+    return view('data', [ "navlinks"=> $navlinks, "comics"=>$comics[$id] ]);
 });
 
 Route::get('/movies', function () {
